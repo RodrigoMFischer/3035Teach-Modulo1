@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-principal: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: rgb(34, 212, 253);
+    --cor-hover: #272727;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(34, 212, 253, 0.5);
+    font-family: var(--fonte-secundaria);
+    background: var(--cor-principal);
+    transition: background 0.5s;
+}
+
+.post:hover {
+    background-color: var(--cor-hover);
+    box-shadow: 8px 8px 8px var(--cor-terciaria)
+}
+
+@media screen and (max-width: 768px) {
+    .posts {
+        grid-template-columns: 1fr;
+    }
+}

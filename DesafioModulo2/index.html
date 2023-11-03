@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Minha Pet Shop</title>
+</head>
+<body >
+    <header id="header">
+        <a class='link' href="./index.html">Home</a>
+        <a class='link' href="./clientes.html">Clientes</a>
+        <a class='link' href="./shop.html">Shopping</a>
+        
+    </header>
+    <main>
+        <div id="info-container">
+            <img src="./assets/petstore.jpeg" alt="Logo da Pet Store" id="petStore">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsum animi amet? Iste tenetur mollitia accusamus, nam quae a quod enim consequatur quas beatae! Eius iure ab maiores iste repudiandae?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nam quaerat cum dolorum voluptatem autem rerum? Ipsum enim asperiores voluptatum iusto hic veniam error cupiditate aperiam tempore nam, animi adipisci!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga voluptas voluptates saepe? Dolor recusandae natus dolorem soluta fugit voluptates ullam inventore aut facilis, officiis exercitationem sint cupiditate quisquam pariatur.
+            </p>
+        </div>
+
+        <div id="form-container">
+            <form onsubmit= "salvar(event)" id="cadastroClientes">
+                <fieldset class="fieldset-parent">
+                    <legend>Cadastro de Clientes</legend>
+
+                    <fieldset class="fieldset-child"> 
+                        <legend>Dados do Tutor</legend>                       
+                        <label for="nomeTutor">Nome:</label>
+                        <input type='nomeTutor' id='nomeTutor' name='nomeTutor' class='nomeTutor' required/>
+    
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id='telefone' name='telefone' class='telefone' maxlength="11" required/>
+    
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id='endereco' name='endereco' class='endereco' required/>
+
+                        <label for="agendamento">Data do agendamento:</label>
+                        <input type="date" id='agendamento' name='agendamento' class='agendamento' required/>
+
+                    </fieldset>
+                    <fieldset class="fieldset-child"> 
+                        <legend>Animal</legend>                       
+                        <label for="nomeAnimal">Nome:</label>
+                        <input type='nomeAnimal' id='nomeAnimal' name='nomeAnimal' class='nomeAnimal' required/>
+    
+                        <label for="idade">Idade:</label>
+                        <input type="number" id='idade' name='idade' class='idade' required/>
+
+                        <label for="porte">Porte</label>
+                        <select id="porte">
+                            <option value="Pequeno">Pequeno</option>
+                            <option value="Médio">Médio</option>
+                            <option value="Grande">Grande</option>                            
+                        </select>
+    
+                    </fieldset>
+                    <div class="button-wrapper">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

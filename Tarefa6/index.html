@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div id="tasks-add">
+        <h1>Adicione Sua Nova Tarefa</h1>
+    
+        <label for="task">Nome da Tarefa:</label>
+        <input type="text" id="task">
+        <button onclick="addTask()">Adicionar Tarefa</button>
+    </div>
+
+    <div id="tables">
+        <h2>Tarefas Pendentes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Data de Criação</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">                
+            </tbody>
+        </table>
+        
+        <h2>Tarefas Concluídas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Data de Criação</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="ConcludedTasks">                
+            </tbody>
+        </table>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

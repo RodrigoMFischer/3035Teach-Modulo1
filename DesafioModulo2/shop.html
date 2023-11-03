@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <title>Shopping</title>
+</head>
+<body onload="criaProdutos()">
+    <header>
+        <nav id="header">
+            <div id="links">
+                <a class="link" href="./index.html">Home</a>
+                <a class="link" href="./clientes.html">Clientes</a>
+                <a class="link" href="./shop.html">Shopping</a>
+            </div>
+            <div id="cart">
+                <button id="menu-button" onclick="loadCart()">Open Cart</button>                
+            </div>
+        </nav>
+    </header>
+    
+    <h1>Shopping</h1>
+    <div id="cart-product-added"></div>
+    <div id="cart-list-modal">
+        <div id="cart-items"></div>                
+    </div>
+    <button onclick="limpaMemoria()"></button>
+    <div id="products-container"></div>
+    <script src="./script.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body { 
+    width: 400px;
+    display: flex;
+    flex-direction: column; 
+}
+
+h1 {
+    background-color: #61677a;
+    display: flex;
+    justify-content: center;
+    color: #fff6e0
+}
+
+#operationContainer {
+    display: flex;
+    flex-direction: column;    
+    width: 400px;
+    background-color: #61677a;
+    color: #fff6e0
+
+}
+
+#operationContainer label, input, button, select {
+    margin: 5px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 400px;
+    background-color: lightgray;
+}
+
