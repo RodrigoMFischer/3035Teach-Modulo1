@@ -6,7 +6,7 @@ function addTask() {
     const task = {
         name: taskName,
         creationDate: new Date().toLocaleDateString(),
-        complete: false // false representa que a tarefa não foi concluída
+        complete: false
     };
 
     tasks.push(task);

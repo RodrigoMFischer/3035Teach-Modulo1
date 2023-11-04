@@ -1,11 +1,65 @@
-/*
-localStorage.setItem('lista', '');
-localStorage.setItem('cart', '');
-*/
+const products = [
+    {
+      name : "Ração Whiskas Gatos",
+      desc : "Saco de ração Whiskas 5 kg",
+      img : './assets/whiskas.jpeg',
+      price : 73.55
+    },
+
+    {
+        name : "Ração Whiskas Filhotes",
+        desc : "Saco de ração Whiskas 3 kg",
+        img : './assets/whiskasF.jpeg',
+        price : 52.99
+    },
+
+    {
+        name : "Ração Golden Gatos",
+        desc : "Saco de ração Golden 5 kg",
+        img : './assets/golden.jpeg',
+        price : 65.99
+    },
+
+    {
+        name : "Pipicat Areia",
+        desc : "Areia Higienica Pipicat 4kg",
+        img : './assets/pipicat.jpeg',
+        price : 43.42
+    },
+
+    {
+        name : "Tigela Grande",
+        desc : "Tigela grande para cães",
+        img : './assets/tigela.jpeg',
+        price : 19.99
+    },
+
+    {
+        name : "Ração Golden Dog",
+        desc : "Saco de ração Golden Dog 5kg",
+        img : './assets/goldenDog.jpeg',
+        price : 62.99
+    },
+
+    {
+        name : "Ração Ligeiro Dog",
+        desc : "Saco de ração Ligeiro Dog 5kg",
+        img : './assets/ligeiro.jpeg',
+        price : 69.25
+    },
+
+    {
+        name : "Ração Pedigree",
+        desc : "Saco de ração Pedigree 5kg",
+        img : './assets/pedigree.jpeg',
+        price : 73.22
+    },
+  
+];
+
 
 const limpaMemoria = () => {
-    localStorage.clear();
-   // loadCart();
+    localStorage.clear();    
 }
 
 const loadStorage = (item) => {
@@ -109,64 +163,6 @@ function closeModal() {
 }
 
 
-const products = [
-    {
-      name : "Ração Whiskas Gatos",
-      desc : "Saco de ração Whiskas 5 kg",
-      img : './assets/whiskas.jpeg',
-      price : 73.55
-    },
-
-    {
-        name : "Ração Whiskas Filhotes",
-        desc : "Saco de ração Whiskas 3 kg",
-        img : './assets/whiskasF.jpeg',
-        price : 52.99
-    },
-
-    {
-        name : "Ração Golden Gatos",
-        desc : "Saco de ração Golden 5 kg",
-        img : './assets/golden.jpeg',
-        price : 65.99
-    },
-
-    {
-        name : "Pipicat Areia",
-        desc : "Areia Higienica Pipicat 4kg",
-        img : './assets/pipicat.jpeg',
-        price : 43.42
-    },
-
-    {
-        name : "Tigela Grande",
-        desc : "Tigela grande para cães",
-        img : './assets/tigela.jpeg',
-        price : 19.99
-    },
-
-    {
-        name : "Ração Golden Dog",
-        desc : "Saco de ração Golden Dog 5kg",
-        img : './assets/goldenDog.jpeg',
-        price : 62.99
-    },
-
-    {
-        name : "Ração Ligeiro Dog",
-        desc : "Saco de ração Ligeiro Dog 5kg",
-        img : './assets/ligeiro.jpeg',
-        price : 69.25
-    },
-
-    {
-        name : "Ração Pedigree",
-        desc : "Saco de ração Pedigree 5kg",
-        img : './assets/pedigree.jpeg',
-        price : 73.22
-    },
-  
-];
 
 const criaProdutos = () => {
     const container = document.getElementById('products-container');
@@ -187,11 +183,6 @@ const criaProdutos = () => {
     })
 
 }
-/*
-const checkCart = (product, cartList) => {
-    cartList.find( current => current === product )
-}*/
-
 
 const addProductToCart = (index) => {
     const cart = loadStorage('cart');  
